@@ -1,0 +1,48 @@
+/*Selectores HTML*/
+h1{
+    color: red;
+    background-color: black;
+    font-family: 'Zeyada', cursive;
+    font-weight: 900;
+}
+
+p{
+    color: blue;
+}
+
+body{
+    background-color: #76a8b7;
+}
+
+
+/*Selector ID*/
+#principal{
+    background-color: greenyellow;
+    font-family: 'Shantell Sans', cursive;
+    color: brown;
+    text-align: justify;
+    font-style: italic;
+}
+
+#imagen1{
+    border-radius: 10px;
+    width: 300px;
+}
+
+
+/*Selector Class*/
+.pares{
+    color: green;
+    font-size: 10px;
+    text-align: right;
+}
+
+.impares{
+    color:rgb(98, 13, 151);
+    font-size: 50px;
+    text-align: center;
+    font-weight:900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
