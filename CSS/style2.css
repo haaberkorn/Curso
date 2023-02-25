@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+}
+
+body{
+    /* background-image: url(https://images8.alphacoders.com/559/thumb-1920-559128.jpg); 
+    background-size:cover;
+    background-repeat: no-repeat;*/
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    background-color: rgba(38, 68, 37, 0.882);
+}
+
+div{
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+/*Margenes en 2 ejes (X, Y)*/
+#caja_1{
+    margin: 10px 30px;
+}
+
+/*Margen global (4 lados)*/
+#caja_2{
+    margin: 50px;
+}
+
+/*Margen individual*/
+#caja_3{
+    margin: 5px 10px 80px 40px;
+}
+
+
+#caja_4{
+    width: 100px;
+    height: 100px;
+    padding: 5px 20px;
+    margin: 50px;
+}
+
+
+#caja_5{
+    height: 100px;
+    width: 200px;
+    margin: 50px 250px;
+    padding: 10px 5px;
+    border: 50px aliceblue solid;
+    border-radius: 10px 30px 10px 30px;
+}

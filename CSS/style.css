@@ -1,6 +1,12 @@
+:root{
+    --miVariable: rgb(117, 117, 2);
+    --variable2: 25px;
+}
+
+
 /*Selectores HTML*/
 h1{
-    color: red;
+    color: var(--miVariable);
     background-color: black;
     font-family: 'Zeyada', cursive;
     font-weight: 900;
@@ -11,21 +17,21 @@ p{
 }
 
 body{
-    background-color: #76a8b7;
+    background-color: var(--miVariable);
 }
 
 
 /*Selector ID*/
 #principal{
-    background-color: greenyellow;
+    background-color: rgb(20, 32, 2);
     font-family: 'Shantell Sans', cursive;
-    color: brown;
+    color: var(--miVariable);
     text-align: justify;
     font-style: italic;
 }
 
 #imagen1{
-    border-radius: 10px;
+    border-radius: var(--variable2);
     width: 300px;
 }
 
@@ -39,8 +45,7 @@ body{
 
 .impares{
     color:rgb(98, 13, 151);
-    font-size: 50px;
-    text-align: center;
+    font-size: var(--variable2);    text-align: center;
     font-weight:900;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
