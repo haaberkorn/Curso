@@ -21,6 +21,7 @@ body{
         none: oculta el elemento
         block: es el tipo de display base que cada elemento tiene
 */
+
 main{
     display: flex;
     justify-content: center;

@@ -1,0 +1,103 @@
+
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Estilos del contenedor de parrafos y sus elementos*/
+
+p{
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+#contenedorDeParrafos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(26deg,#063542,#25638e,#4da8c1,#82c5e3);
+    gap: 30px;
+    height: 100vh;
+    width: 100%;
+}
+
+#identificador{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: arial;
+    border-radius: 30px;
+    width: 500px;
+    background: linear-gradient(90deg,#032d47,#028bf4);
+}
+    
+
+.clase_compartida{
+    background: linear-gradient(270deg,#473903,rgb(244, 216, 2),yellow);
+    font-weight: 700;
+    font-family: roboto;
+    border-radius: 10px;
+    width: 300px;
+}
+
+
+/*Estilos del contenedor de formulario y sus elementos*/
+
+#formulario{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(rgba(0,154,77,1) 0%, rgb(9, 92, 53) 50%, rgb(0, 52, 13) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#formulario h1{
+    color: white;
+    font-family: roboto;
+    font-weight: 700;
+    margin-bottom: 40px;
+    background-color: #ffffff38;
+    padding: 12px 20px;
+    border-radius: 7px 30px;
+}
+
+#formulario input{
+    background-color: rgb(199, 252, 178);
+    padding: 5px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+    width: 200px;
+}
+
+#formulario select{
+    background-color: rgb(199, 252, 178);
+    padding: 5px 0px;
+    border-radius: 7px;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+    width: 200px;
+}
+
+#formulario button{
+    width: 80px;
+    background-color: rgb(199, 252, 178);
+    padding: 5px 0px;
+    border-radius: 7px;
+    font-family: 'Lucida Sans';
+    font-weight: 900;
+    border-color: rgb(2, 40, 8);
+    border-width: 2px;
+    color: rgb(3, 46, 11);
+}
