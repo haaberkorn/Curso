@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+}
+
+body{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 10% 90%;
+    background-color: rgb(14, 14, 14);
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+aside a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside a p{
+    color: white;
+    font-family: roboto;
+    font-size: 12px;
+}
+
+
+
+#caja_1{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}

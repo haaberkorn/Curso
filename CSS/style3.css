@@ -15,21 +15,66 @@ body{
 
 
 /*
+    
+*/
+
+/* 
+    Glosario:
+    
     display
-        flex: convierte el elemento en flexible, ideal para posicionar
+        flex: convierte el elemento en flexible. Es ideal para posicionar
         grid: diseñado para trabajar filar y columnas
         none: oculta el elemento
         block: es el tipo de display base que cada elemento tiene
+
+    - flex-direction: indica la direccion de un elemento tipo flex.
+    (Fila, Columna, Fila inversa, columna inversa... etc)
+
+    - flex-wrap: determina si los elementos flexibles deben romperse 
+    y continuar en una nueva línea o no.
+
+    - grid-wrap: determina si las filas o columnas de la rejilla pueden
+    romperse y continuar en una nueva línea o no.
+
+    - grid-template-columns: permite establecer la cantidad de columnas y su tamaño
+    en un elemento tipo grid.
+
+    - grid-template-rows: permite establecer la cantidad de filas y su tamaño
+    en un elemento tipo grid.
+
+    - justify-content: Se encarga de trabajar el eje principal de una alineacion.
+        (eje horizontal(x) para fila y eje vertical(y) para columna)
+        -space-between: Separa los elementos lo maximo posible sin dejar espacio con el borde
+        -space-around: Separa los elementos lo maximo posible pero dejando un pequeño espacio con los bordes
+        -space-evenly: Separa los elementos equitativamente tanto entre si como con el borde
+
+
+    - align-items: se encarga de trabajar el eje secundario de una alineacion.
+        (eje vertical(y) para fila y eje horizontal(x) para columna)
 */
 
+/*
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    width: 300px;
-    height: 330px;
-    padding: 20px;
-    gap: 10px;
+    width: 800px;
+    height: 400px;
     background-color: bisque;
+}*/
+
+main{
+    display: grid;
+    place-items: center;
+    width: 70%;
+    height: 80%;
+    border: black 4px solid;
+}
+
+main div{
+    background-color: burlywood;
+    width: 90px;
+    height: 50px;
 }
