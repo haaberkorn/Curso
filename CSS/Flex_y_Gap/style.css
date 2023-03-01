@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /*background: linear-gradient(300deg,#3c86ed,#16478b,#011420);*/
+    background: radial-gradient(#3c86e1 1%,#010f22);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*
+    padding: separacion interna de un contenedor, se aplica a los elementos en su interior con relacion al borde
+    margin: espaciado externo de los elementos y/o contenedores
+    border: borde de los elementos y/o contenedores
+    gap: separacion de los elementos en un contenedor (de tipo flex/grid) entre si.
+*/
+
+body div p{
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
