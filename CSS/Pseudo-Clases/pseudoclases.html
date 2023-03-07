@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./pseudoclases.css">
+		<title>Pseudo-Clases CSS</title>
+	</head>
+	<body>
+
+		<!-- 
+			Algunas de las pseudoclases más comunes y útiles que se pueden utilizar en CSS son:
+
+			:hover: se aplica a un elemento cuando el usuario pasa el ratón sobre él.
+			:active: se aplica a un elemento cuando el usuario hace clic sobre él.
+			:focus: se aplica a un elemento cuando tiene el foco, es decir, cuando el usuario lo ha seleccionado y 
+			está listo para escribir o editar su contenido.
+			:first-child: se aplica al primer elemento hijo de otro elemento.
+			:last-child: se aplica al último elemento hijo de otro elemento.
+			:nth-child(n): se aplica al elemento hijo n de otro elemento.
+			:nth-last-child(n): se aplica al elemento hijo n contando desde el final.
+			:not(selector): se utiliza para aplicar una regla de estilo a todos los 
+			elementos que no coinciden con el selector especificado
+		-->
+
+		<h1 class="titulo">Pseudo-clases</h1>
+		<div class="contenedor">
+
+
+			<div class="caja">
+				<label>:active / :link / :visited / :hover</label>
+				<div class="links">
+					<a class="enlace" href="#">ancla con :link : visited : hover</a>
+					<a class="enlace" href="https://google.com">ancla con :link : visited : hover</a>
+					<a id="ancla" href="https://github.com/Haonter">:active</a>
+					<button id="boton-Hover">Boton</button>
+				</div>
+			</div>
+			
+
+			<div class="caja">
+				<label>:first-child / :last-child</label>
+				<div id="parrafos">
+					<p>Soy el parrafo 1!</p>
+					<p>Soy el parrafo 2!</p>
+					<p>Soy el parrafo 3!</p>
+					<p>Soy el parrafo 4!</p>
+					<p>Soy el parrafo 5!</p>
+					<p>Soy el parrafo 6!</p>
+					<p>Soy el parrafo 7!</p>
+				</div>
+			</div>
+			
+
+			<div class="caja">
+				<label>:first-of-type / :last-of-type</label>
+				<div id="elementos">
+					<div>Hola soy un div!</div>
+					<p>Hola soy un parrafo!</p>
+					<span>Hola soy un span!</span>
+					<p>Hola soy otro parrafo!</p>
+					<div>Hola soy otro div!</div>
+				</div>
+			</div>
+
+			
+			<div class="caja">
+				<label>:nth-child() / :nth-last-child()</label>
+				<ul class="grupo1">
+					<li>soy el elemento #1</li>
+					<li>soy el elemento #2</li>
+					<li>soy el elemento #3</li>
+					<li>soy el elemento #4</li>
+					<li>soy el elemento #5</li>
+					<li>soy el elemento #6</li>
+					<li>soy el elemento #7</li>
+					<li>soy el elemento #8</li>
+				</ul>
+			</div>
+
+
+			<div class="caja">
+				<label>:nth-of-type() / :nth-last-of-type()</label>
+				<div class="grupo2">
+					<div>Hola soy un div!</div>
+					<p>Hola soy un parrafo!</p>
+					<p>Hola soy otro parrafo!</p>
+					<div>Hola soy otro div!</div>
+					<p>Hola soy otro parrafo!</p>
+					<h4>Hola soy un h4</h4>
+				</div>
+			</div>
+			
+
+			<div class="caja">
+				<label>:only-child</label>
+				<div class="grupo3">
+					<p>Hola, soy el unico hijo de esta lista!</p>
+					
+				</div>
+			</div>
+
+
+			<div class="caja">
+				<label>:only-of-type</label>
+				<div class="grupo4">
+					<div>Hoy, soy un div.</div>
+					<p>Hola, soy el unico parrafo de esta lista!</p>
+					<div>Hoy, soy un div.</div>
+					<div>Hoy, soy un div.</div>
+				</div>
+			</div>
+
+
+			<div class="caja">
+				<label>:not</label>
+				<div class="grupo5">
+					<h1>Hoy, soy un h1.</h1>
+					<p>Hoy, soy un parrafo.</p>
+					<h3>Hoy, soy un h3.</h3>
+					<p>Hola, soy un parrafo.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
