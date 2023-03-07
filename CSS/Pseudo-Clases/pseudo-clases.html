@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-clases</title>
+    </head>
+    <body>
+        <!-- 
+            Las pseudoclases se usan para seleccionar elementos que están en un estado particular 
+            o que cumplen una condición específica. Algunas de las pseudoclases más comunes y 
+            útiles que se pueden utilizar en CSS son:
+
+			:hover: se aplica a un elemento cuando el usuario pasa el ratón sobre él.
+			:active: se aplica a un elemento cuando el usuario hace clic sobre él.
+			:focus: se aplica a un elemento cuando tiene el foco, es decir, cuando el usuario lo ha seleccionado y 
+			está listo para escribir o editar su contenido.
+			:first-child: se aplica al primer elemento hijo de otro elemento.
+			:last-child: se aplica al último elemento hijo de otro elemento.
+			:nth-child(n): se aplica al elemento hijo n de otro elemento.
+			:nth-last-child(n): se aplica al elemento hijo n contando desde el final.
+			:not(selector): se utiliza para aplicar una regla de estilo a todos los 
+			elementos que no coinciden con el selector especificado
+		-->
+
+        <h1>Pseudo-clases</h1>
+        <div id="container">
+            <div class="caja">
+				<label>:active / :link / :visited / :hover</label>
+				<div class="links">
+					<a class="enlace" href="#">ancla con :link : visited : hover</a>
+					<a class="enlace" href="https://google.com">ancla con :link : visited : hover</a>
+					<a id="ancla" href="https://github.com/Haonter">:active</a>
+				</div>
+			</div>
+        </div>
+
+
+        
+    </body>
+</html>

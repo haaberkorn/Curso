@@ -2,13 +2,24 @@
     box-sizing: border-box;
     margin: 0px;
     top: 0px;
+    font-family: roboto;
 }
 
 body{
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 10% 90%;
     background-color: rgb(14, 14, 14);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    position: fixed;
+    width: 90vw;
+    background-color: rgb(14, 14, 14);
+    z-index: 1;
 }
 
 aside{
@@ -16,6 +27,8 @@ aside{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    position: fixed;
+    width: 9vw;
 }
 
 aside a{
@@ -30,8 +43,53 @@ aside a p{
     font-size: 12px;
 }
 
+#recomenaciones{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 1vw;
+}
 
 #caja_1{
     margin-top: 15px;
     margin-bottom: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9vw
+}
+
+#cuadriculaVideo{
+    margin-top: 10px;
+    margin-left: 1vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.infoVideo{
+    display: flex;
+    gap: 15px;
+}
+
+.imgVideo{
+    width: 270px;
+    border-radius: 15px;
+}
+
+.tituloVideo{
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    width: 200px;
+}
+
+.stat-canal{
+    color: gray;
+    font-size: 12px;
+}
+
+.sup{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
