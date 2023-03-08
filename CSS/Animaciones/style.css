@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background: radial-gradient(rgb(0, 132, 255), rgb(10, 45, 98));
+    overflow-x: hidden;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(31, 195, 80),rgb(2, 51, 21));
+    padding: 30px 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*Estilos de caja 1*/
+.caja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    /*
+    TRANSITION-NO ABRIR
+    transition: background 1s linear;
+    */
+    
+
+    
+    /* 1)
+        animation-name(nombre de la animacion)
+        Indicar el nombre de animacion y crear regla de @keyframes con from y to,
+        NO SE EJECUTA HASTA... indicar la duracion y la funcion de tiempo*/
+    animation-name: animacion1;
+
+    /* 2)
+        Duracion(s o ms), indica el tiempo que tomara desde el inicio al fin */
+    animation-duration: 3s;
+
+    /* 3)
+        funcion de tiempo, es la velocidad que tendra la animacion
+        Presionar ctrl + clic en el link para ir a: https://cubic-bezier.com/ */
+    animation-timing-function:linear;
+
+    /* 4)
+        Contador de repeticiones/Iteraciones (numero o infinite)*/
+    animation-iteration-count: 10;
+
+    /* 5)
+        Se define el color de fondo de la caja para mostrar al detener 
+        la animacion, sino queda transparente
+    */
+    background-color: rgb(117, 53, 177); 
+    
+    /* 6) 
+        animation-play-state(paused,running)
+        define el estado de la animacion
+    */
+    animation-play-state: running; 
+
+    /* 7)
+        animation-direction(normal/reverse/alternate/alternatereverse) 
+        permite elejir como se recorrera la animacion, 
+        por defecto es de inicio a fin, pero se puede colocar de inicio a fin y de vuelta
+    */
+    animation-direction: normal;
+    
+    /* 8)
+        animation-delay(s,ms) 
+        permite indicar el tiempo de retraso de una animacion
+    */
+    animation-delay: 2000ms;
+
+    /*Continuar con caja2*/
+}
+
+/* ACTIVA TRANSITION
+.caja1:active{
+    background-color: rgb(58, 3, 61);
+} */
+
+.caja1:hover{
+    animation-play-state:paused;
+}
+.caja1:active{
+    background-color: darkorange;
+    color: black;
+}
+
+/*Estilos de caja 2*/
+.caja2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    /* Primero linear y luego https://cubic-bezier.com/#.17,.67,.82,.39 */
+    animation: animacion2 5s 2s linear infinite alternate;
+
+    /*
+        Se define el color de fondo de la caja para mostrar hacer click ( :active )
+    */
+    background-color: rgb(13, 150, 17);
+    
+}
+.caja2:hover{
+    animation-play-state: paused;
+}
+.caja2:active{
+    background-color: brown;
+}
+
+/*Estilos de caja 3*/
+.caja3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+    animation: 
+        animacion1 5s 3500ms linear alternate infinite,
+        animacion2 7s 500ms linear alternate infinite,
+        animacion3 7s 800ms linear alternate infinite;
+
+    /*
+        Se define el color de fondo de la caja para mostrar al detener 
+        la animacion, sino queda transparente
+    */
+    background-color: rgb(226, 98, 43);
+    
+}
+.caja3:hover{
+    animation-play-state: paused;
+}
+/*Si hay mas de una animacion :active no se aplica*/
+.caja3:active{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Animacion de caja 1*/
+@keyframes animacion1 {
+    from{
+        background-color: rgb(170, 41, 2);
+    }
+    to{
+        background-color:rgb(6, 116, 109);
+    }
+}
+
+
+/* Animacion de caja 2*/
+@keyframes animacion2 {
+    0%{
+        transform: translate(350px, 0px);
+    }
+    33.3%{
+        transform: translate(-350px, 0px);
+    }
+    66.6%{
+        transform: translate(350px, 0px);
+    }
+    100%{
+        transform: translate(-350px, 0px);
+    }
+}
+
+
+/* Animacion de caja 3*/
+@keyframes animacion3 {
+    0%{
+        border-radius: 50% 30% 50% 30%;
+    }
+    25%{
+        border-radius: 30% 50% 30% 50%;
+    }
+    50%{
+        border-radius: 50% 30% 50% 30%;
+    }
+    75%{
+        border-radius: 30% 50% 30% 50%;
+    }
+    100%{
+        border-radius: 50% 30% 50% 30%;
+    }
+}

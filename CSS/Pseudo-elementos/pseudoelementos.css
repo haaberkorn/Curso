@@ -1,8 +1,8 @@
 :root{
     --colorBoton:rgb(29, 82, 126);
     --colorFondoParrafo:rgb(26, 45, 61);
-    --colorSeleccion:rgb(2, 141, 255);
-    --colorPrimeraLetra:rgb(7, 187, 211);
+    --colorSeleccion:rgb(255, 65, 2);
+    --colorPrimeraLetra:rgb(0, 255, 51);
 }
 
 body{
@@ -25,8 +25,7 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
 	background: radial-gradient(rgb(0, 110, 255),black);
-	width: 10px;
-	border-radius: 10px;
+	border-radius: 30px;
 }
 
 h1{
@@ -40,7 +39,7 @@ h1{
 
 h1::selection{
     color: rgb(78, 4, 107);
-    background-color: gold;
+    background-color: rgb(4, 255, 0);
 }
 
 #contenedor{
@@ -78,14 +77,26 @@ h1::selection{
     color: var(--colorPrimeraLetra);
 }
 
+#parrafo span{
+    color: red;
+    font-size: 10px;
+}
+
+#parrafo span::selection{
+    color: var(--colorSeleccion);
+    background-color: rgb(18, 28, 51);
+}
+
 #parrafo::first-line{
+    font-family: 'Lucida Sans';
+    color: deeppink;
     font-size: 20px;
     font-family: monospace;
 }
 
 #parrafo::selection{
     color: var(--colorSeleccion);
-    background-color: rgb(19, 1, 17);
+    background-color: rgb(18, 28, 51);
 }
 
 .boton{
@@ -110,7 +121,9 @@ h1::selection{
     cuando el puntero esta sobre el elemento.
 */
 
-#primerBoton:hover:before{
+/*Antes*/
+#primerBoton:hover::before{
+    color: rgb(255, 56, 89);
     content: "Ir directo a ";
 }
 
@@ -121,8 +134,9 @@ h1::selection{
     border: none;
 }
 
-#segundoBoton:hover::after{
-    content: " - Esto se muestra despues con ::after";
+/*Despues*/
+#segundoBoton:active::after{
+    content: " - añadir al carrito";
     color: rgb(128, 226, 37);
 }
 
@@ -131,7 +145,7 @@ h1::selection{
     padding: 10px;
     border-radius: 9px;
     background-color:rgba(255, 255, 255, 0.039);
-    color: rgb(9, 149, 174);
+    color: rgb(9, 243, 255);
     border: none;
     outline: none;
     text-align: center;
