@@ -58,7 +58,7 @@ h1{
         animation-name(nombre de la animacion)
         Indicar el nombre de animacion y crear regla de @keyframes con from y to,
         NO SE EJECUTA HASTA... indicar la duracion y la funcion de tiempo*/
-    animation-name: animacion1;
+    animation-name: colores2;
 
     /* 2)
         Duracion(s o ms), indica el tiempo que tomara desde el inicio al fin */
@@ -71,7 +71,7 @@ h1{
 
     /* 4)
         Contador de repeticiones/Iteraciones (numero o infinite)*/
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
 
     /* 5)
         Se define el color de fondo de la caja para mostrar al detener 
@@ -90,7 +90,7 @@ h1{
         permite elejir como se recorrera la animacion, 
         por defecto es de inicio a fin, pero se puede colocar de inicio a fin y de vuelta
     */
-    animation-direction: normal;
+    animation-direction: alternate;
     
     /* 8)
         animation-delay(s,ms) 
@@ -101,17 +101,14 @@ h1{
     /*Continuar con caja2*/
 }
 
-/* ACTIVA TRANSITION
-.caja1:active{
-    background-color: rgb(58, 3, 61);
-} */
+/* ACTIVA TRANSITION */
 
 .caja1:hover{
     animation-play-state:paused;
 }
 .caja1:active{
-    background-color: darkorange;
-    color: black;
+    background-color: rgb(246, 27, 228);
+
 }
 
 /*Estilos de caja 2*/
@@ -151,12 +148,12 @@ h1{
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 
     animation: 
         animacion1 5s 3500ms linear alternate infinite,
-        animacion2 7s 500ms linear alternate infinite,
+        animacion2 1s 500ms linear alternate infinite,
         animacion3 7s 800ms linear alternate infinite;
 
     /*
@@ -169,9 +166,9 @@ h1{
 .caja3:hover{
     animation-play-state: paused;
 }
-/*Si hay mas de una animacion :active no se aplica*/
+/*Si hay mas de una animacion trabajando el mismo estilo :active no se aplica*/
 .caja3:active{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(24, 194, 55);
 }
 
 
@@ -187,6 +184,27 @@ h1{
     }
 }
 
+@keyframes colores2{
+    0%{
+        background-color: aliceblue;
+        transform: scale(0.0) rotate(0deg);
+
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: burlywood;
+    }
+    75%{
+        background-color: brown;
+    }
+    100%{
+        background-color: aqua;
+        transform: scale(0.3) rotate(-30deg);
+
+    }
+} 
 
 /* Animacion de caja 2*/
 @keyframes animacion2 {
@@ -194,10 +212,10 @@ h1{
         transform: translate(350px, 0px);
     }
     33.3%{
-        transform: translate(-350px, 0px);
+        transform: translate(350px, 50px);
     }
     66.6%{
-        transform: translate(350px, 0px);
+        transform: translate(-350px, 50px);
     }
     100%{
         transform: translate(-350px, 0px);

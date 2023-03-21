@@ -1,8 +1,8 @@
 :root{
     --colorBoton:rgb(29, 82, 126);
-    --colorFondoParrafo:rgb(26, 45, 61);
-    --colorSeleccion:rgb(255, 65, 2);
-    --colorPrimeraLetra:rgb(0, 255, 51);
+    --colorFondoParrafo:rgb(26, 61, 30);
+    --colorSeleccion:rgb(208, 21, 205);
+    --colorPrimeraLetra:rgb(204, 0, 255);
 }
 
 body{
@@ -38,8 +38,8 @@ h1{
 }
 
 h1::selection{
-    color: rgb(78, 4, 107);
-    background-color: rgb(4, 255, 0);
+    color: rgb(233, 10, 10);
+    background-color: rgb(59, 192, 117);
 }
 
 #contenedor{
@@ -79,24 +79,25 @@ h1::selection{
 
 #parrafo span{
     color: red;
-    font-size: 10px;
+    font-size: 25px;
 }
 
 #parrafo span::selection{
     color: var(--colorSeleccion);
-    background-color: rgb(18, 28, 51);
+    background-color: rgb(200, 230, 68);
 }
 
 #parrafo::first-line{
     font-family: 'Lucida Sans';
-    color: deeppink;
-    font-size: 20px;
+    color: rgb(20, 255, 98);
+    background-color: black;
+    font-size: 30px;
     font-family: monospace;
 }
 
 #parrafo::selection{
     color: var(--colorSeleccion);
-    background-color: rgb(18, 28, 51);
+    background-color: rgb(249, 167, 15);
 }
 
 .boton{
@@ -137,15 +138,15 @@ h1::selection{
 /*Despues*/
 #segundoBoton:active::after{
     content: " - añadir al carrito";
-    color: rgb(128, 226, 37);
+    color: rgb(226, 100, 37);
 }
 
 #input{
     width: 280px;
     padding: 10px;
     border-radius: 9px;
-    background-color:rgba(255, 255, 255, 0.039);
-    color: rgb(9, 243, 255);
+    background-color: green; 
+    color: rgb(255, 42, 9);
     border: none;
     outline: none;
     text-align: center;
@@ -156,5 +157,4 @@ h1::selection{
 
 #input::placeholder{
     color: rgb(174, 166, 9);
-    
 }

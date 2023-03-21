@@ -1,0 +1,37 @@
+/* variables */
+$color1: linear-gradient(#020608,#44464566)
+$color2: linear-gradient(#b0e60f,#d03d14,#5400bb)
+$ancho: 300px
+$colorvar1:green
+$colorvar2:blue
+    
+/* Mixins */
+@mixin flexColCenter()
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+/* Mixins con Parametros */
+@mixin flexible($param1,$param2,$param3,$param4)
+    display: $param1
+    flex-direction: $param2
+    justify-content: $param3
+    align-items: $param4
+
+/* SUPER Mixin */
+@mixin superMixin($param1,$param2,$param3,$param4,$param5,$param6,$param7,$param8,$param9)
+    display: $param1
+    flex-direction: $param2 
+    grid-template-columns: $param3
+    justify-content: $param4
+    align-items: $param5
+    place-items: $param6
+    width: $param7
+    height: $param8
+    background: $param9
+/* sintaxis de formato SASS */
+*
+    box-sizing: border-box
+    margin: 0px
+    top: 0px

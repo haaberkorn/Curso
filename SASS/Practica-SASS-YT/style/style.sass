@@ -1,0 +1,84 @@
+*
+    box-sizing: border-box
+    top: 0px
+    margin: 0px
+    color: white
+    font-family: 'Mulish', sans-serif
+    
+@mixin alinear($var1,$var2,$var3,$var4,$var5,$var6,$var7)
+    display: $var1
+    flex-direction: $var2 
+    justify-content: $var3
+    align-items: $var4
+    gap: $var5
+    place-items: $var6
+    grid-template-columns: $var7
+
+    
+
+a:link
+    text-decoration: none 
+
+body
+    width: 100%
+    @include alinear(grid,null,null,null,null,null,8% 92%)
+    background: #100d0d
+    aside
+        @include alinear(flex,column,null,center,20px,null,null)
+        div
+            @include alinear(flex,column,null,center,null,null,null)
+
+#homeIcon
+    margin: 15px 0px 25px 0px
+
+
+nav
+    @include alinear(flex,null,space-between,center,null,null,null)
+.nav_hijo
+    display: flex
+    align-items: center
+    gap:12px
+    &_inputLupa
+        display: flex
+        align-items: center
+        input
+            height: 35px
+            width: 500px
+            border-radius: 25px 0px 0px 25px
+            padding-left: 10px 
+        img
+            background: #ffffff18
+            height: 35px
+            border-radius: 0px 25px 25px 0px
+    a
+        @include alinear(flex,null,center,center,null,null,null)
+        border-radius: 50%
+        background: #ffffff18
+        img
+            height: 45px
+
+
+#recomendaciones
+    margin: 10px 0px 15px 0px
+    @include alinear(flex,null,null,center,10px,null,null)
+    button
+        border-radius: 5px
+        background: #2d2d2d
+        border: none
+        padding: 8px
+        font-size: 15px
+    button:hover
+        background: gray
+
+.cuadricula
+    @include alinear(grid,null,null,null,null,null,repeat(4,1fr))
+    &_video
+        @include alinear(flex,column,null,null,5px,null,null)
+        &_info
+            @include alinear(flex,null,null,null,5px,null,null)
+            & img:first-of-type
+                width: 50px
+                height: 50px
+.imgvideo
+    width: 330px
+    border-radius: 15px

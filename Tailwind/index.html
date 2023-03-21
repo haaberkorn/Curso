@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Tailwind / Clon-Google</title>
+    </head>
+    <body class="bg-[#212125] flex flex-col justify-between h-[100vh]">
+        <!-- Barra de navegacion -->
+        <nav class="text-white flex justify-end items-center gap-[16px] mt-2 mr-2">
+            <p>Gmail</p>
+            <p>Imagenes</p>
+            <img src="./imagenes/menu_hamburguesa.jpg" alt="Menu menu_hamburguesa">
+            <img src="./imagenes/fotos de perfil.jpg" alt="fotos del perfil">
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="flex flex-col items-center text-white gap-6">
+            <img class="w-[380px]" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="">
+            <div class="flex mt-[30px] border-solid border-white-900 border-[1px] rounded-full gap-2 p-2 px-4">
+                <img src="./imagenes/lupa.jpg" alt="">
+                <input class="bg-[#212125] w-[582.4px] pl-2 focus:outline-none" type="text" placeholder="Buscar">
+                <img src="./imagenes/microfono_camara.jpg" alt="">
+            </div>
+            <div class="flex gap-4 "> 
+                <p class="bg-[#313034] p-2 rounded-lg " >Buscar con Google</p>
+                <p class="bg-[#313034] p-2 rounded-lg">Voy a tener suerte</p>
+            </div>
+        </main>
+
+        <!-- Pie de pagina -->
+        <footer class="flex flex-col text-white bg-[#313131] gap-[2px] ">
+            <div class="pl-4 bg-[#111111] py-2">
+                <p>Venezuela</p>
+            </div>
+            <div class="flex justify-between bg-[#111111] py-2">
+                <div class="flex gap-3 ml-4">
+                    <p>Sobre Google</p>
+                    <p>Publicidad</p>
+                    <p>Negocios</p>
+                    <p>Como funciona la busqueda</p>
+                </div>
+                <div class="flex gap-3 mr-2">
+                    <p>Privacidad</p>
+                    <p>Condiciones</p>
+                    <p>Preferencias</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

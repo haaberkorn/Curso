@@ -1,0 +1,142 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(0, 238, 255), rgb(5, 92, 105));
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    color: rgb(237, 237, 237);
+    border-radius: 10px;
+    background: linear-gradient(rgb(0, 175, 140), rgb(15, 83, 83));
+    padding: 16px 10px;
+}
+h1:hover{
+    transform: skew(10deg, -5deg) scale(1.2) rotate(8deg) translate(10px, -5px);
+}
+
+span{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 15px;
+}
+
+.container{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 10px;
+}
+.hola:hover{
+    transform: rotate(30deg);
+}
+
+.hola2{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(42, 165, 122);
+    border-radius: 10px;
+}
+.hola2:hover{
+    transform: translate(-50px, 120px);
+}
+
+.hola3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(114, 42, 165);
+    border-radius: 10px;
+}
+.hola3:hover{
+    transform: skew(20deg, -30deg)
+}
+
+.hola4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(153, 165, 42);
+    border-radius: 10px;
+}
+.hola4:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(
+        to bottom left,
+        rgb(103, 197, 255),
+        rgb(39, 194, 255),
+        rgb(0, 106, 255)
+    )
+}*/

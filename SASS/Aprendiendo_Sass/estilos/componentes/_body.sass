@@ -1,0 +1,15 @@
+
+/* Anidamiento */
+body
+    width: 100%
+    /* body main */
+    main
+        width: 100%
+        background: $color1
+        div
+            
+            @include flexible(flex,column,flex-start,center)
+            img
+                width: $ancho
+        section
+            @include superMixin(flex,columns,null,center,center,null,100%,500px,$color2)

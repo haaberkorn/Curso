@@ -1,0 +1,22 @@
+.caja-parrafo
+    @include superMixin(flex,columns,null,center,center,null,100%,500px,#d06b6b)
+    gap: 10px
+
+$colores: red,blue,orange,purple,yellow,gray,skyblue,greenyellow,pink,aqua
+
+
+@each $color in $colores
+    .parrafo_#{$color}
+        color: $color
+        background: #000
+        padding: 5px
+        border-radius: 10px  
+
+$numeros:5,7,9,11,13,15,17,19,21,23
+@each $elemento in $numeros
+    .parrafo_#{$elemento}
+        color: red
+        background: #100f0f
+        font-size: $elemento + 10px
+        padding: 5px 
+        border-radius: 10px  
