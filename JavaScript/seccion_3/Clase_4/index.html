@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>JavaScript</title>
+    </head>
+    <body class="m-0 p-0 t-0 w-[100vw] h-[100vh] bg-gradient-to-br from-yellow-400 to-yellow-900">
+        <main class="w-[100%] h-[100%] flex flex-col gap-6 items-center justify-center ">
+            <h1 class="text-white text-3xl p-8 rounded bg-sky-100/25 italic font-bold shadow-inner drop-shadow-md shadow-xl">
+                Aprendiendo
+                <span class="drop-shadow-md text-yellow-400">JavaScript</span>!
+            </h1>
+            <section class="flex gap-4">
+                <a href="./index.html"><span class="py-3 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">Inicio</span></a>
+                <a href="./index2.html"><span class="py-3 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">Pagina 2</span></a>
+            </section>
+            <div class="flex flex-col gap-2 w-[500px] justify-center items-center h-[200px]">
+                <input id="inputNombre" class="rounded pl-2 h-9 w-64" type="text" placeholder="Nombre" >
+                <input id="inputApellido" class="rounded pl-2 h-9 w-64" type="text" placeholder="Apellido">
+                <input id="inputEdad" class="rounded pl-2 h-9 w-64" type="number" placeholder="Edad">
+                <div class="flex gap-2">
+                    <button id="enviar" class="py-1 px-4 rounded shadow-inner drop-shadow text-white bg-white/20 hover:bg-black/25 hover:text-yellow-100">Registrar</button>
+                    <button id="verRegistros" class="py-1 px-4 rounded shadow-inner drop-shadow text-white bg-white/20 hover:bg-black/25 hover:text-yellow-100">Ver Registros</button>
+                </div>
+            </div>
+
+            <!--llenar con Javascript-->
+            <div id="registros">
+            </div>
+            
+        </main>
+    </body>
+    <script src="./clases.js"></script>
+</html>

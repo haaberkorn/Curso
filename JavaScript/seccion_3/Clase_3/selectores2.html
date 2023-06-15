@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Selectores</title>
+    </head>
+    <body class="m-0 p-0 t-0 w-[100vw] h-[100vh] bg-gradient-to-br from-yellow-400 to-yellow-900">
+
+        <h1>Aprendiendo JavaScript</h1>
+        <p id="parrafoDelHTML" class="bg-gray-400 text-red-800 text-center text-2xl">El fondo es blanco</p>
+
+
+        <h1>Esto es otro titulo</h1>
+
+
+        <div class="cajaJavaScript" id="caja_vacia">
+            caja Vacia
+        </div>
+
+
+
+        <div id="cajaPadre">
+            <p>Este parrafo se creo jundo al documento HTML</p>
+            <button onclick="console.log('Hola')" id="miBoton"> saludar </button>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <input class="border border-2 border-black border-solid rounded" type="number" id="numero1" placeholder="0">
+            <input class="border border-2 border-black border-solid rounded" type="number" id="numero2" placeholder="0">
+            <button id="botonSumar"> Sumar </button>
+            <button id="botonRestar"> Restar </button>
+            <button id="botonMultiplicar"> Multiplicar </button>
+            <button id="botonDividir">Dividir </button>
+            <p id="resultado">El total es: 0</p>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <h1>Calculadora con eval</h1>
+            <p id="parrafoEval">Total: 0</p>
+            <input id="inputEval" type="text" placeholder="0">
+            <button id="operacion">operar</button>
+        </div>
+
+        <button id="cambiarColor">Cambiar Color</button>
+
+    </body>
+    <script src="./Eventos.js"></script>
+</html>

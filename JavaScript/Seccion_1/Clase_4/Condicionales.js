@@ -136,7 +136,7 @@ if(resultadoNumbers >= 0 || resultadoNumbers <= 0){
     
     */
 
-    let producto = +prompt(
+    let producto = +prompt( 
         `Minimarket 🤩
         Que deseas comprar?:
         1) carne
@@ -179,7 +179,7 @@ if(resultadoNumbers >= 0 || resultadoNumbers <= 0){
                 alert("Pronto llegaran mas producto");
                 break; 
             default:              
-                alert("Opcion no validad")
+                alert("Opcion no validad");
                                            
         }
 

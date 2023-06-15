@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>JavaScript - 2</title>
+    </head>
+    <body class="m-0 p-0 t-0 w-[100vw] h-[100vh] bg-gradient-to-br from-yellow-400 to-yellow-900">
+        <div class="w-[100%] h-[100%] flex flex-col gap-6 items-center justify-center ">
+            <h1 class="text-white text-3xl p-8 rounded bg-white/10 italic font-bold shadow-inner drop-shadow-md shadow-xl">
+                Aprendiendo
+                <span class="drop-shadow-md text-yellow-400">JavaScript</span>!
+                (Parte 2)
+            </h1>
+            <a href="./index.html">
+                <span class="py-3 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">Regresar</span>
+            </a>
+            <div id="cajaParrafo" class="rounded shadow drop-shadow-lg bg-white/10 flex mt-8 flex-col items-center justify-center w-[600px] h-[250px]">
+                <p 
+                    id="parrafo"
+                    onmouseover="cambiarTexto()" 
+                    onmouseleave="cambiarTexto2()" 
+                    class="selection:bg-yellow-900/50 selection:text-yellow-300 w-[500px] text-center font-semibold text-white drop-shadow-md text-xl">
+                        Hola, estas aprendiendo JavaScript.
+                </p>
+
+                <!--Llenado con js-->
+                <div id="caja" name="caja">
+                </div>
+                
+
+                <div class="flex gap-2">
+                    <!--Boton-->
+                    <button id="boton" name="boton" class="mt-8 flex">
+                        <span id="" name="" class="py-3 relative flex gap-2 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">
+                            Click Aqui
+                            <div class="animate-pulse z-10 ml-10 mt-5 absolute">
+                                <div class="animate-bounce">
+                                    <img class="w-5 rotate-[-40deg]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mano_cursor.svg/1200px-Mano_cursor.svg.png" alt="Carga">
+                                </div>
+                            </div>
+                        </span>
+                    </button>
+
+                    <!--Boton 2-->
+                    <button id="boton2" class="mt-8 flex">
+                        <span id="" name="" class="py-3 relative flex gap-2 px-4 rounded shadow-inner drop-shadow text-white bg-white/25 hover:bg-black/25 hover:text-yellow-100">
+                            Cambiar Color
+                            <div class="animate-pulse z-10 ml-10 mt-5 absolute">
+                                <img class="w-5 rotate-[-40deg]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mano_cursor.svg/1200px-Mano_cursor.svg.png" alt="cambiar">
+                            </div>
+                        </span>
+                    </button>
+
+                    <button id="boton3"> cambias 3</button>
+
+    
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <script src="./Eventos.js"></script>
+</html>
