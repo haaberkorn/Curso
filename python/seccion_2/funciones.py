@@ -23,6 +23,7 @@
 
 
 
+from functools import reduce
 from os import system
 def saludar():
     print("Hola Mundo!")
@@ -153,7 +154,7 @@ print(f"La lista Resultante es: {list(resultadosConLambda)}")
 # del contenido previo impreso.
 
 system("cls")
-print("Se limpio la consona 1 vez")
+print("Se limpio la consola 1 vez")
 
 # filter()
 # La función filter() crea una lista con los elementos de otra lista que cumplen cierta condición.
@@ -175,3 +176,66 @@ numerosPares = list(filter(esPAr, numeros))
 
 print(list(numeros))
 print(numerosPares)
+
+
+# Realizamos el mismo ejemplo, pero en esta ocasion usamos filter con una funcion Lambda, en esta ocasion capturamos los números impares.
+
+# Definimos una variable que se llenara con los elementos procesados por la función filter() y la funcion Lambda en su interior.
+numerosImparesConLambda = filter(lambda parametro: parametro % 2 == 1, numeros)
+
+print(f"La lista de numeros impares es: {list(numerosImparesConLambda)}")
+
+
+system("cls")
+print("Se limpio la consola 2 veces")
+
+
+# reduce()
+# La función reduce() aplica una función a los elementos de una lista de manera acumulativa,
+# es decir, toma el resultado de la operación anterior como el primer parametro de la siguiente operación.
+
+
+# Importamos reduce
+
+
+# Definimos una lista de números
+listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+# Ejemplo de reduce() sin una funcion Lambda(anonima) (en este caso con una funcion definida)
+
+# Definimos una función que suma dos números
+def sumaReduce(param1, param2):
+    return int(param1) + int(param2)
+
+
+# Usamos reduce para sumar los números de la lista
+totalDeSumas = reduce(sumaReduce, listaDeNumeros)
+
+
+# Mostramos el resultado
+print(f"La lista Original es: {listaDeNumeros}")
+print(f"El resultado de la suma acumulativa es: {totalDeSumas}")
+
+
+# listaDeNumeros = [1,2,3,4,5,6,7,8,9,10]
+# Como se llego al resultado total
+# 1 + 2 = 3
+# 3 + 3 = 6
+# 6 + 4 = 10
+# 10 + 5 = 15
+# 15 + 6 = 21
+# 21 + 7 = 28
+# 28 + 8 = 36
+# 36 + 9 = 45
+# 45 + 10 = 55
+
+system("cls")
+
+
+# Ejemplo 2 recorrer una lista de numeros con un valor inicial para la sumatoria
+totalDeSumas2 = reduce(sumaReduce, listaDeNumeros, 969)
+# Mostramos el resultado
+print(f"La lista Original es: {listaDeNumeros}")
+print(
+    f"El resultado de la suma acumulativa es iniciando con 969: {totalDeSumas2}")
